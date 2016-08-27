@@ -15,3 +15,4 @@ infilename=abc1.txt AA_PATH=/home1 AA_OUT=aaaaaaa
 infilename　= abc1.txt
 AA_PATH 　　　= /home1
 AA_OUT  　　　= aaaaaaa
+
