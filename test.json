@@ -1,0 +1,6 @@
+[
+{"infilename":"abc1.txt","env":[{"AA_PATH":"/home1","AA_OUT":"aaaaaaa"}]},
+{"infilename":"abc2.txt","env":[{"AA_PATH":"/home2","AA_OUT":"bbbbbbb"}]},
+{"infilename":"abc3.txt","env":[{"AA_PATH":"/home3","AA_OUT":"ccccccc"}]},
+{"infilename":"abc4.txt"}
+]
