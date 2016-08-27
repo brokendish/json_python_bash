@@ -3,21 +3,25 @@
 
 aaa=`python3 python_json.py`
 
-echo "#-#-#-#-#-#-#-#"
+echo "----- json data ---------------"
 echo "$aaa"
-echo "#-#-#-#-#-#-#-#"
+echo "-------------------------------"
+echo ""
 
+echo "----- select ---------------"
+echo "abc1.txt"
 targetFile="abc1.txt"
+echo ""
 
+echo "----- target ---------------"
 ret=`echo "$aaa"|grep $targetFile`
 echo $ret
-
-export filename=
-export AA_PATH=
-export AA_OUT=
+echo ""
 
 for lis in $ret;
 do
+	re=`echo "$lis"|cut -d '=' -f1`
+	test -n "$re" && export "$re"
 	eval "export $lis"
 
 done
