@@ -1,7 +1,7 @@
 #!/usr/bin/bash
 
 
-aaa=`python3 python_json.py`
+aaa=`python3 python_json.py test.json`
 
 echo "----- json data ---------------"
 echo "$aaa"

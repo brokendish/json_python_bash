@@ -2,14 +2,15 @@
 
 # -*- coding: utf-8 -*-
 
+import sys
 import json
 
 class JsonGet(object):
 
-
 	def __init__( self ):
+		param = sys.argv
+		self.__jsonFile = param[1]
 		self.__js=""
-		self.__jsonFile = 'test.json'
 		self.__array_col = "env"
 
 	def openData( self ):
