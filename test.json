@@ -1,6 +1,6 @@
 [
-{"infilename":"abc1.txt","env":[{"AA_PATH":"/home1","AA_OUT":"aaaaaaa"}]},
-{"infilename":"abc2.txt","env":[{"AA_PATH":"/home2","AA_OUT":"bbbbbbb"}]},
-{"infilename":"abc3.txt","env":[{"AA_PATH":"/home3","AA_OUT":"ccccccc"}]},
-{"infilename":"abc4.txt"}
+{"infilename":"abc1.txt","env":[{"A1_PATH":"/home1","A1_OUT":"aaaaaaa"}]},
+{"infilename":"abc2.txt","env":[{"A2_PATH":"/home2","A2_OUT":"bbbbbbb"}]},
+{"infilename":"abc3.txt","env":[{"A3_PATH":"/home3","A3_OUT":"ccccccc"}]},
+{"infilename":"abc4.txt","outfilename":"abc4_out.txt"}
 ]

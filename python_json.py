@@ -6,12 +6,11 @@ import json
 
 class JsonGet(object):
 
-	__key = ""
-	__js = ""
-	
+
 	def __init__( self ):
 		self.__js=""
 		self.__jsonFile = 'test.json'
+		self.__array_col = "env"
 
 	def openData( self ):
 		f = open(self.__jsonFile,'r')
@@ -21,14 +20,15 @@ class JsonGet(object):
 	def getData( self ):
 		ret=""
 		for lis in self.__js:
-			ret += "infilename=" + lis["infilename"] + " "
-			if "env" in lis:
-				for nex in lis["env"]:
-					ret += "AA_PATH=" + nex["AA_PATH"] + " " 
-					ret += "AA_OUT=" + nex["AA_OUT"] + " "
-				ret +='\n'
-	
+			for keys in list(lis.keys()):
+				if keys == self.__array_col:
+					for nex in lis[keys]:
+						for next in list(nex.keys()):
+							ret += next + "=" + nex[next] + " "
+				else:
+					ret += keys + "=" + lis[keys] + " "
+			ret +='\n'	
 		print(ret)
-aaa = JsonGet()
-aaa.openData()
-aaa.getData()
+jg = JsonGet()
+jg.openData()
+jg.getData()

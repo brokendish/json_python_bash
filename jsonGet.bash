@@ -9,8 +9,8 @@ echo "-------------------------------"
 echo ""
 
 echo "----- select ---------------"
-echo "abc1.txt"
-targetFile="abc1.txt"
+echo "abc2.txt"
+targetFile="abc2.txt"
 echo ""
 
 echo "----- target ---------------"
@@ -22,13 +22,21 @@ for lis in $ret;
 do
 	re=`echo "$lis"|cut -d '=' -f1`
 	test -n "$re" && export "$re"
+	echo $lis
 	eval "export $lis"
 
 done
 
 echo "----- enviroment ---------------"
 echo "infilename　=" $infilename
-echo "AA_PATH 　　　=" $AA_PATH
-echo "AA_OUT  　　　=" $AA_OUT
+echo "outfilename　=" $outfilename
+echo "A1_PATH 　　　=" $A1_PATH
+echo "A1_OUT  　　　=" $A1_OUT
+
+echo "A2_PATH 　　　=" $A2_PATH
+echo "A2_OUT  　　　=" $A2_OUT
+
+echo "A3_PATH 　　　=" $A3_PATH
+echo "A3_OUT  　　　=" $A3_OUT
 
 
