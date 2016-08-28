@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 
-
+echo "----- execute python -----"
 aaa=`python3 python_json.py test.json`
 
 echo "----- json data ---------------"

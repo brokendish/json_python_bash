@@ -30,6 +30,7 @@ class JsonGet(object):
 					ret += keys + "=" + lis[keys] + " "
 			ret +='\n'	
 		print(ret)
+
 jg = JsonGet()
 jg.openData()
 jg.getData()
