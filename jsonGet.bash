@@ -9,8 +9,8 @@ echo "-------------------------------"
 echo ""
 
 echo "----- select ---------------"
-echo "abc2.txt"
-targetFile="abc2.txt"
+echo "abc3.txt"
+targetFile="abc3.txt"
 echo ""
 
 echo "----- target ---------------"
