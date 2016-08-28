@@ -2,5 +2,6 @@
 {"infilename":"abc1.txt","env":[{"A1_PATH":"/home1","A1_OUT":"aaaaaaa"}]},
 {"infilename":"abc2.txt","env":[{"A2_PATH":"/home2","A2_OUT":"bbbbbbb"}]},
 {"infilename":"abc3.txt","outfilename":"abc3_out.txt","env":[{"A3_PATH":"/home3","A3_OUT":"ccccccc"}]},
-{"infilename":"abc4.txt","outfilename":"abc4_out.txt"}
+{"infilename":"abc4.txt","outfilename":"abc4_out.txt"},
+{"copyfilename":"abc5.txt","outfilename":"abc5_out.txt"}
 ]
