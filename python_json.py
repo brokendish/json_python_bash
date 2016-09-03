@@ -21,13 +21,12 @@ class JsonGet(object):
 	def getData( self ):
 		ret=""
 		for lis in self.__js:
-			for keys in list(lis.keys()):
-				if keys == self.__array_col:
-					for nex in lis[keys]:
-						for next in list(nex.keys()):
-							ret += next + "=" + nex[next] + " "
+			for keyaa in list(lis.keys()):
+				if keyaa == self.__array_col:
+					for nex in list(lis[keyaa].keys()):
+						ret += nex + "=" + lis[keyaa][nex] + " "
 				else:
-					ret += keys + "=" + lis[keys] + " "
+					ret += keyaa + "=" + lis[keyaa] + " "
 			ret +='\n'	
 		print(ret)
 
