@@ -8,6 +8,13 @@ echo "$jsondat"
 echo "-------------------------------"
 echo ""
 
+echo "----- target file ---------------"
+targetFile="abc1.txt"
+echo "targetFile:$targetFile"
+ret=`echo "$jsondat"|grep $targetFile`
+jsondat=$ret
+
+
 echo "----- set enviroment ---------------"
 echo "$jsondat"|while read line
 do
